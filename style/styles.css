@@ -90,8 +90,7 @@ footer {
 /* contato */
 
 main {
-  width: 940px;
-  margin: 0 auto;
+  
 }
 
 form {
@@ -163,6 +162,13 @@ th {
   clear: left;
 }
 
+.principal {
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 0 auto;
+}
+
 .principal p {
   margin: 0 0 1em;
 }
@@ -181,12 +187,56 @@ th {
   margin: 0 20px 20px 0;
 }
 
-.imagembeneficios {
-  width: 60%;
+.beneficios { 
+  padding: 3em 0; 
+  background: #888888;
+  
 }
+
+.conteudo-beneficio {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios {
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 500px;
+  right: 100px;
+}
+
+.imagem-beneficios {
+  left: 800px;
+  width: 600px;
+  position: absolute; 
+  opacity: 1; 
+  transition: 400ms;
+  box-shadow: 10px 10px 30px 20px "000";
+}
+
+.imagem-beneficios:hover {
+  opacity: 0.7;
+
+}
+
+.itens {
+  line-height: 1.5;
+}
+
+.itens::before {
+  content: "⚝ ";
+}
+
+.itens:first-child {
+  font-weight: bold;
+}
+
 
 .mapa {
   padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+  
 }
 
 .mapa p {
@@ -194,7 +244,74 @@ th {
   text-align: center;
 }
 
+.mapa-conteudo {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .video {
   width: 560px;
-  margin: 1em auto;
+  margin: 20em auto;
+
+  
+}
+
+@media screen and (max-width:480px){
+  header{
+    
+  }
+
+  .caixa, .principal,
+  .conteudo-beneficio,
+  .mapa-conteudo,
+  .video {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  
+  nav {
+    position: static;
+  }
+
+  .lista-beneficios {
+    left: -400px;
+    width: 600px;
+    position: absolute; 
+    
+  }
+
+  .imagem-beneficios {
+    top: 1800px;
+    left: 40px;
+    width: 300px;
+    position: absolute; 
+    opacity: 1; 
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 20px "000";
+    color: #888888;
+}
+
+  .imagem-beneficios:hover {
+    opacity: 0.7;
+
+  }
+
+  .video {
+    top: 1700px;
+    position: absolute;
+    width: 380px;
+    margin: 20em auto;
+    color: #888888;
+  
+  }
+
+  footer {
+    position: absolute;
+    top: 2334px;
+    width: 380px;
+  }
+  
 }
